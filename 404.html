@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <script> 
-const url = window.location.href;
-const path = window.location.pathname;
-
-// Check if the path is empty or just "/"
-if (path === "/" || path === "") {
-    window.location.href = "https://qkeleq10.github.io/studytools";
-} else if (url.includes("/beta")) {
-    window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd";
-} else if (url.includes("/extension")) {
-    window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak";
-} else {
-    window.location.href = "https://qkeleq10.github.io/studytools";
+function verwijzingVoorURL(url) {
+    if (url.includes('/beta')) {
+        return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd';
+    } else if (url.includes('/extension')) {
+        return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak';
+    } else {
+        return 'https://qkeleq10.github.io/studytools';
+    }
 }
 
-
-window.location.href = "https://qkeleq10.github.io/studytools";
+// Voorbeeldgebruik:
+const huidigeURL = window.location.href; // Vervang dit door de daadwerkelijke URL
+const verwijzing = verwijzingVoorURL(huidigeURL);
+window.location.href = verwijzing;
 
 </script>
 </html>
