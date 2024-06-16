@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<script> 
+function verwijzingVoorURL(url) {
+    if (url === 'https://studytoolsvoormagister.github.io') {
+        return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak';
+    } else if (url.includes('/beta')) {
+        return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd';
+    } else if (url.includes('/extension')) {
+        return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak';
+    } else {
+        return 'https://qkeleq10.github.io/studytools';
+    }
+}
+
+// Voorbeeldgebruik:
+const huidigeURL = window.location.href; // Vervang dit door de daadwerkelijke URL
+const verwijzing = verwijzingVoorURL(huidigeURL);
+console.log(verwijzing)
+window.location.href = verwijzing;
+
+</script>
+</html>
