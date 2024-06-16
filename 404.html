@@ -4,18 +4,20 @@
 const url = window.location.href;
 const path = window.location.pathname;
 
-// Check if the path is empty or just "/"
 if (path === "/" || path === "") {
-    window.location.href = "https://qkeleq10.github.io/studytools";
-} else if (path.includes("/beta")) {
+     window.location.href = "https://qkeleq10.github.io/studytools";
+}
+if (path.includes("/beta")) {
     window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd";
-} else if (path.includes("/extension")) {
-    window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak";
-} else {
-    window.location.href = "https://qkeleq10.github.io/studytools";
+}
+
+if (path.includes("/extension")) {
+    window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd";
 }
 
 
+
+ window.location.href = "https://qkeleq10.github.io/studytools";
 
 </script>
 </html>
