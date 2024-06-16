@@ -2,7 +2,9 @@
 <html lang="en">
 <script> 
 function verwijzingVoorURL(url) {
-    if (url.includes('/beta')) {
+    if (url === 'https://studytoolsvoormagister.github.io') {
+        return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak';
+    } else if (url.includes('/beta')) {
         return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd';
     } else if (url.includes('/extension')) {
         return 'https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak';
