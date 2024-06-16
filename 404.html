@@ -5,10 +5,13 @@ const url = window.location.href;
 const path = window.location.pathname;
 
 if (path.includes("/beta")) {
+    console.log("beta")
     window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/dlmdgkhbbclpolcofdlhlpdpiobmklmd";
 } else if (path.includes("/extension")) {
+    console.log("extension")
     window.location.href = "https://chromewebstore.google.com/detail/study-tools-voor-magister/hacjodpccmeoocakiahjfndppdeallak";
 } else {
+    console.log("else")
     window.location.href = "https://qkeleq10.github.io/studytools";
 }
 
